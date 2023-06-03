@@ -8,7 +8,7 @@
 
     - name: Create vprofile VPC
       ec2_vpc_net:
-        name: "{{Rajesh}}"
+        name: "{{vpc_name}}"
         cidr_block: "{{vpcCidr}}"
         region: "{{region}}"
         dns_support: yes
