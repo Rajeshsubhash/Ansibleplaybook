@@ -32,8 +32,9 @@
         resource_tags:
           Name: vprofile-pubsub1
       register: pubsub1_out
-   
-   - name: create Public subnet 2 in zone2
+    
+    
+    - name: create Public subnet 2 in zone2
       ec2_vpc_subnet:
         vpc_id: "{{ vpcout.vpc.id }}"
         region: "{{ region }}"
@@ -91,4 +92,5 @@
         resource_tags:
           Name: vprofile_privsub3
       register: privsub3_out
+   
    
